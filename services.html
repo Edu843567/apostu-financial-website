@@ -12,6 +12,19 @@
             --dark-bg: #1b1b1b;
             --dark-text: #e6e6e6;
         }
+<div id="chatbot-container">
+    <div id="chatbot-button" onclick="toggleChatbot()">💬</div>
+
+    <div id="chatbot-window">
+        <div id="chatbot-header">Apostu Assistant</div>
+        <div id="chatbot-messages"></div>
+
+        <div id="chatbot-input-area">
+            <input id="chatbot-input" type="text" placeholder="Ask me anything..." onkeydown="if(event.key==='Enter') sendMessage()">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+</div>
 
         body {
             margin: 0;
